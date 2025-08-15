@@ -1,3 +1,34 @@
+# Write a python program to check if a number is divisible by both 3 and 5
+def q1():
+    n = int(input("Enter a number: "))
+    if n % 3 == 0 and n % 5 == 0:
+        print("It is divisible by both 3 and 5")
+    else:
+        print("It is not divisible by both 3 and 5")
+
+
+# Write a python program to print all even numbers between 1 and 20
+def q2():
+    for i in range(1, 21):
+        if i % 2 == 0:
+            print(i)
+
+
+# Print numbers from 1 to 10 but skip when it reaches 6
+def q3():
+    for i in range(1, 11):
+        if i == 6:
+            continue
+        print(i)
+
+
+# Print numbers from 1 to 10 skipping multiples of 3
+def q4():
+    for i in range(1, 11):
+        if i % 3 == 0:
+            continue
+        print(i)
+#atm func
 def withdraw(w_amount, Balance, T_history):
     if w_amount > Balance:
         print("Amount exceeds balance")
