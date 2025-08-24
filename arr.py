@@ -32,12 +32,8 @@ if 100 in marks:
 else:
     print("100 is not present")
 
-# count how many scored exactly 70
-count = 0
-for i in marks:
-    if i == 70:
-        count += 1
-print("No of students scored exactly 70:", count)
+# count how many scored exactly 90
+print("No of students scored exactly 90:",np.count_nonzero(marks == 90))
 
 # find index of first student who scored 71
 for i in range(0, len(marks)):
@@ -79,4 +75,3 @@ a1, a2 = np.array_split(marks, 2)
 print("First half:", a1)
 print("Second half:", a2)
 
-print(np.count_nonzero(marks==90))
